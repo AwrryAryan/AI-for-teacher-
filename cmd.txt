@@ -1,0 +1,52 @@
+The following is a list of the command line instructions mentioned in the sources for Git, GitHub, and general terminal usage:
+General Terminal & File Management Commands
+
+ls: Used to list all files and folders in the current directory.
+ls -a: Lists all files, including hidden files such as the .git folder.
+cd <folder_name>: Stands for "Change Directory"; used to move into a specific folder.
+cd ..: Used to move back one level to the parent directory.
+mkdir <name>: Creates a new directory (folder).
+clear: Clears the terminal screen.
+pwd: Displays the current working directory path.
+
+Git Configuration Commands
+
+git --version: Checks if Git is installed and displays the current version.
+git config --global user.name "Your Name": Sets your GitHub username globally on your system.
+git config --global user.email "your_email@example.com": Sets your GitHub email address globally.
+git config --list: Lists all current Git configuration settings.
+
+Basic Git Workflow Commands
+
+git init: Initializes a new, empty Git repository in a local folder.
+git clone <link>: Creates a local copy of a remote GitHub repository on your machine.
+git status: Shows the current status of the repository, including modified, untracked, or staged files.
+git add <file_name>: Adds a specific file to the staging area.
+git add .: Adds all modified and new files to the staging area at once.
+git commit -m "message": Records the staged changes with a descriptive message to track history.
+git push origin <branch_name>: Uploads local commits to the specified branch on the remote GitHub repository.
+git push -u origin <branch_name>: Pushes changes and sets the specified branch as the default upstream for future pushes.
+git pull origin <branch_name>: Fetches and downloads content from the remote repository and integrates it into your local branch.
+Branching & Merging Commands
+git branch: Lists all branches in the repository and indicates which one is currently active.
+git branch -m <new_name>: Renames the current branch.
+git branch -d <branch_name>: Deletes the specified branch.
+git check out <branch_name>: Switches from the current branch to another existing branch.
+git check out -b <new_branch_name>: Creates a new branch and switches to it immediately.
+git diff <branch_name>: Shows the differences between the current branch and another branch.
+git merge <branch_name>: Merges the changes from the specified branch into the current active branch.
+Remote Repository Management
+git remote add origin <link>: Links a local repository to a remote repository on GitHub.
+git remote -v: Verifies the link to the remote repository.
+
+Undoing Changes & Viewing History
+
+git log: Displays the full history of commits made in the current branch.
+git reset <file_name>: Unstages a specific file that was previously added.
+git reset: Unstages all files that were ready to be committed.
+git reset HEAD~1: Undoes the most recent commit, moving those changes back to the staging phase.
+git reset <commit_hash>: Resets the repository to a specific point in history using a commit's unique ID.
+git reset --hard <commit_hash>: Resets the repository and the actual code files to a specific commit, permanently discarding any changes made after that point.
+
+Since this is a comprehensive list, would you like me to create a tailored report summarizing these commands or perhaps some flashcards to help you memorize them?
+
